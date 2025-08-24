@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayari Quiz Hinglish</title>
+ <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    
+
+    <div class="leaves">
+
+      <div class="set">
+
+        <div><img src="image5.webp" alt="leaf-01"></div>
+         <div><img src="image5.webp" alt="leaf-02"></div>
+         <div><img src="image5.webp" alt="leaf-03"></div>
+         <div><img src="image5.webp" alt="leaf-04"></div>
+         <div><img src="image5.webp" alt="leaf-05"></div>
+         <div><img src="image5.webp" alt="leaf-06"></div>
+
+         <div><img src="fuuny.webp" alt="leaf-06"></div>
+         <div><img src="fuuny.webp" alt="leaf-07"></div>
+         <div><img src="fuuny.webp" alt="leaf-08"></div>
+         <div><img src="fuuny.webp" alt="leaf-09"></div>
+         <div><img src="fuuny.webp" alt="leaf-10"></div>
+       
+
+      </div>
+     
+
+    </div>
+       
+
+
+
+
+
+
+    <div class="login" style="max-width: 700px; width: 100%;">
+
+
+  <h2>funny shayari quiz✨</h2>
+  <hr>
+
+  <div class="question">
+    <p>Q1: Kabhi roti ke tukre mei<br> Kabhi shalan ke Piyale mei <br>Teri Zulfo ka didar jana👧 <br> hai hmare har niwale mai  😂– Ye kis  ki shayari hai? <br></p>
+    <label><input type="radio" name="q1" value="Danish Azeem"> Danish Azeem</label><br>
+    <label><input type="radio" name="q1" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q1" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q1" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q1','Danish Azeem')">Check</button>
+    <p id="r1" class="result"></p>
+  </div>
+
+    <div class="question">
+    <p>Q2:chunhe🐀ko lagi billi😸gori gori dono milne lage chori chori chunha bolaya aao khele aankh micholi...billi chuhnhe ko khake boli jaanu sorry i hate love story... – Ye kis ki shayari hai?</p>
+       <label><input type="radio" name="q5" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q5" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q5" value="sm Tabish">sm Tabish</label><br>
+        <label><input type="radio" name="q5" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q5','sm Tabish')">Check</button>
+    <p id="r5" class="result"></p>
+  </div>
+
+ 
+
+  <div class="question">
+    <p>Q3: Kabhi to haslo in daanton se khil khil kar...budhape main dukh hi denge ye hil hil kr... – Ye kis ki shayari hai?</p>
+      <label><input type="radio" name="q3" value="Munawar Faruqui"> Munawar Faruqui</label><br>
+    <label><input type="radio" name="q3" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q3" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+       <label><input type="radio" name="q3" value="Hasmukh hawai"> Hasmukh hawai </label><br>
+    <button onclick="checkAnswer('q3','Mirza Ghalib')">Check</button>
+    <p id="r3" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q4:Tumhari muskan dekh kar dil meri mil gaya...lekin jab bill dekha restaurant ka pocket mera hil gya.. </p>
+       <label><input type="radio" name="q4" value="Hasmukh hawai"> Hasmukh hawai</label><br>
+    <label><input type="radio" name="q4" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q4" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q4" value="Ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q4','Hasmukh hawai')">Check</button>
+    <p id="r4" class="result"></p>
+  </div>
+
+   <div class="question">
+    <p>Q5:Kisika haath tham kar chorna nai....wada kisise krke todna nai...koi agr todde dil apka to bina hath pao tode usse chorna nai...</p>
+    <label><input type="radio" name="q2" value="Munawar Faruqui"> Munawar Faruqui</label><br>
+    <label><input type="radio" name="q2" value="Akbar Allahabadi"> Akbar Allahabadi</label><br>
+    <label><input type="radio" name="q2" value="Maskhari Miyan"> Maskhari Miyan</label><br>
+       <label><input type="radio" name="q2" value="Ahmed Faraz"> Ahmed Faraz </label><br>
+    <button onclick="checkAnswer('q2','Maskhari Miyan')">Check</button>
+    <p id="r2" class="result"></p>
+  </div>
+
+  <p id="finalResult"></p>
+
+  <script>
+    let correct = 0, wrong = 0, attempted = 0;
+
+    function checkAnswer(qId, rightAns) {
+      let options = document.getElementsByName(qId);
+      let selected = "";
+      for(let opt of options) {
+        if(opt.checked) {
+          selected = opt.value;
+          break;
+        }
+      }
+
+      let resId = "r" + qId.substring(1);
+
+      if(!selected) {
+        document.getElementById(resId).innerText = "Please select an option!";
+        return;
+      }
+
+      attempted++;
+
+      if(selected === rightAns) {
+        document.getElementById(resId).innerText = "Right ✅";
+        correct++;
+      } else {
+        document.getElementById(resId).innerText = "Wrong ❌ (Right Ans: " + rightAns + ")";
+        wrong++;
+      }
+
+      if(attempted === 5) {
+        document.getElementById("finalResult").innerText = 
+          "Aapka Result: " + correct + " Right ✅ aur " + wrong + " Wrong ❌ (Total 5 me se)";
+      }
+    }
+  </script>
+
+</body>
+</html>
