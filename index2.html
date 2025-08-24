@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1 class="animated-heading">WELCOME TO QUIZ</h1>
+  <h1 class="content" >خوش آمدید! آپ کے کوئز میں خیرمقدم ہے</h1>
+  <hr>
+  
+  <div class="box">
+    <div id="conatiner"  onclick="openQuiz2('index4.html')"><b>Friendship Quotes
+ </b></div>
+    <div id="container1"   onclick="openQuiz3('index5.html')"><b>Funny Quotes</b></div>
+    <div id="container2" onclick="openQuiz('index3.html')"><b>Open Theme</b></div>
+  </div>
+  
+ <footer>
+  <p>
+    Welcome to our quiz corner! Explore and have fun by choosing a quiz that suits your mood—try the <strong>Friendship Quiz</strong> to test your bonds, the <strong>Funny Quiz</strong> for some laughs, or the <strong>Open Theme Quiz</strong> to challenge your creativity. Dive in and enjoy!
+  </p>
+</footer>
+<script>
+   function openQuiz2(page) {
+      alert("You are in  Friendship quiz page!");
+      window.location.href = page; 
+    }
+     function openQuiz3(page) {
+      alert("You are in  Funny quiz page!");
+      window.location.href = page; 
+    }
+    function openQuiz(page) {
+      alert("You are in  open theme quiz page!");
+      window.location.href = page; 
+    }
+</script>
+
+  
+</body>
+</html>
