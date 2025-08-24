@@ -1,126 +1,158 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:"Poppins",sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayari Quiz Hinglish</title>
+ <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    
 
-html, body{ height:100%; }
-body{
-  display:grid;
-  place-items:center;          
-  min-height:100vh;
-  overflow:hidden;            
-}
+    <div class="leaves">
 
-.bg{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  object-fit:cover;
-  pointer-events:none;
-  z-index:0;
-}
-.trees{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  object-fit:cover;
-  pointer-events:none;
-  z-index:100;
-}
+      <div class="set">
 
+        <div><img src="photo9.png" alt="leaf-01"></div>
 
-.leaves{
-  position:absolute; inset:0;
-  width:100%; height:100%;
-  overflow:hidden;
-  display:flex; justify-content:center; align-items:center;
-  pointer-events:none; z-index:1;
-}
-.leaves .set{ position:absolute; inset:0; pointer-events:none; }
-.leaves .set div{ position:absolute; display:block; }
-.leaves .set div:nth-child(1){ img{width: 5px;};left:10%; animation: animate 20s linear infinite; }
-.leaves .set div:nth-child(2){  img{width: 5px;};left:20%; animation: animate 14s linear infinite; }
-.leaves .set div:nth-child(3){  img{width: 5px;};left:78%; animation: animate 12s linear infinite; }
-.leaves .set div:nth-child(4){ img{width: 5px;}; left:54%;  animation: animate 15s linear infinite; }
-.leaves .set div:nth-child(5){ img{width: 5px;}; left:85%; animation: animate 18s linear infinite; }
-.leaves .set div:nth-child(6){ img{width: 5px;}; left:90%; animation: animate 12s linear infinite; }
-.leaves .set div:nth-child(7){  img{width: 5px;};left:15%; animation: animate 14s linear infinite; }
-.leaves .set div:nth-child(8){ img{width: 5px;}; left:65%; animation: animate 15s linear infinite; }
-.leaves .set div:nth-child(9){ img{width: 5px;};left:21%; animation: animate 20s linear infinite; }
-.leaves .set div:nth-child(10){  img{width: 5px;};left:59%; animation: animate 14s linear infinite; }
-.leaves .set div:nth-child(11){  img{width: 5px;};left:76%; animation: animate 12s linear infinite; }
-.leaves .set div:nth-child(12){ img{width: 5px;}; left:52%;  animation: animate 15s linear infinite; }
-.leaves .set div:nth-child(13){ img{width: 5px;}; left:65%; animation: animate 18s linear infinite; }
-.leaves .set div:nth-child(14){ img{width: 5px;}; left:30%; animation: animate 12s linear infinite; }
-.leaves .set div:nth-child(15){  img{width: 5px;};left:25%; animation: animate 14s linear infinite; }
-.leaves .set div:nth-child(16){ img{width: 5px;}; left:40%; animation: animate 12s linear infinite; }
-@keyframes animate{
-  0%{   opacity:0; top:-10%; transform:translate(20px) rotate(0deg); }
-  10%{  opacity:1; }
-  20%{  transform:translate(-20px) rotate(45deg); }
-  40%{  transform:translate(-20px) rotate(90deg); }
-  60%{  transform:translate(20px)  rotate(180deg); }
-  80%{  transform:translate(-20px) rotate(45deg); }
-  100%{ top:110%; transform:translate(20px) rotate(225deg); }
-}
+        <div><img src="photo9.png" alt="leaf-02"></div>
+
+        <div><img src="photo9.png" alt="leaf-03"></div>
+
+        <div><img src="photo9.png" alt="leaf-04"></div>
+
+        <div><img src="photo9.png" alt="leaf-05"></div>
+
+        <div><img src="photo9.png"alt="leaf-06"></div>
+
+        <div><img src="photo9.png" alt="leaf-07"></div>
+
+        <div><img src="photo9.png" alt="leaf-08"></div>
+        <div><img src="photo9.png" alt="leaf-09"></div>
+
+        <div><img src="photo9.png" alt="leaf-10"></div>
+
+        <div><img src="photo9.png" alt="leaf-11"></div>
+
+        <div><img src="photo9.png" alt="leaf-12"></div>
+
+        <div><img src="photo9.png" alt="leaf-13"></div>
+
+        <div><img src="photo9.png"alt="leaf-14"></div>
+
+        <div><img src="photo9.png" alt="leaf-15"></div>
+
+        <div><img src="photo9.png" alt="leaf-16"></div>
+
+      </div>
+
+    </div>
 
 
-.girl{
-  position:absolute;
-  bottom:0;
-  pointer-events:none;
-  transform:translateX(100vw);
-  animation: animateGirl 5s linear infinite; 
-  z-index:50;
-}
-@keyframes animateGirl{
-  0%{   transform:translateX(100vw); }
-  100%{ transform:translateX(-100%); }      
-}
 
-.login{
-  width:min(700px, 92vw);
-  max-height:82vh;            
-  overflow-y:auto;
-  padding:32px;
-  border-radius:20px;
-  background:rgba(255,255,255,0.25);
-  backdrop-filter:blur(15px);
-  border:1px solid rgba(255,255,255,0.7);
-  box-shadow:0 25px 50px rgba(0,0,0,0.15);
-  z-index:200;
-  margin:0;                     
-}
+    
+
+    <img class="bg" src="photo3.jpg" alt="Background">
 
 
-.login h2{
-  text-align:center;
-  font-size:2.1rem;
-  font-weight:700;
-  color:#333;
-  margin-bottom:16px;
-}
+   
 
 
-.question{ 
-  font-size:1.05rem; 
-  color:#222; 
-  margin:10px 0 6px; 
-  font-weight:500; 
-}
+
+    <div class="login" style="max-width: 700px; width: 100%;">
 
 
-label{ display:block; margin:6px 0; cursor:pointer; color:#333; }
-input[type="radio"]{ margin-right:8px; }
+  <h2>Friendship Shayari Quiz🤝</h2>
+  <hr>
 
-button{
-  background:#4CAF50; color:#fff; border:none;
-  padding:10px 20px; border-radius:10px; font-weight:700;
-  margin-top:12px; cursor:pointer; transition:.3s;
-}
-button:hover{ background:#45a049; }
+  <div class="question">
+    <p>Q1:Humko yaaron ne yaad v na rakha<br>(Jaun)yaaron ke yar the humto... – Ye kis  ki shayari hai?</p>
+    <label><input type="radio" name="q1" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q1" value="Jaun Elia"> Jaun Elia</label><br>
+    <label><input type="radio" name="q1" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q1" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q1','Mirza Ghalib')">Check</button>
+    <p id="r1" class="result"></p>
+  </div>
 
-@media (max-width:480px){
-  .login{ padding:22px; }
-  .login h2{ font-size:1.6rem; }
-}
+  <div class="question">
+    <p>Q2:Main ab har shaks se upta chuka hun...faqat kuch dost hai or dost v kia? – Ye kis  ki shayari hai?</p>
+    <label><input type="radio" name="q2" value="Munawar Faruqui"> Munawar Faruqui</label><br>
+    <label><input type="radio" name="q2" value="Jaun Elia"> Jaun Elia</label><br>
+    <label><input type="radio" name="q2" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+       <label><input type="radio" name="q2" value="Ahmed Faraz"> Ahmed Faraz </label><br>
+    <button onclick="checkAnswer('q2','Jaun Elia')">Check</button>
+    <p id="r2" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q3: Khuda ke waaste mauqa na de sikayat ka<br>ke dosti ki tarah dushamani nibhaya kar – Ye kis ki shayari hai?</p>
+      <label><input type="radio" name="q3" value="Saqi Farooqi">Saqi Farooqi</label><br>
+    <label><input type="radio" name="q3" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q3" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+       <label><input type="radio" name="q3" value="Ahmed Faraz"> Ahmed Faraz </label><br>
+    <button onclick="checkAnswer('q3','Saqi Farooqi')">Check</button>
+    <p id="r3" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q4: Jo dost hai wo maangte hai sulah ki dua....dushman ye chahate hai apas mein jung h0... – Ye kis ki shayari hai?</p>
+       <label><input type="radio" name="q4" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q4" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q4" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q4" value="Lala Madhav Ram Jauhar"> Lala Madhav Ram Jauhar</label><br>
+    <button onclick="checkAnswer('q4','Lala Madhav Ram Jauhar')">Check</button>
+    <p id="r4" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q5:jaate ho khuda hafiz haan itni guzarish hai...jab yaad hm ajaye milne ki dua karo? – Ye kis ki shayari hai?</p>
+       <label><input type="radio" name="q5" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q5" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q5" value="Jaleel Manikpuri">Jaleel Manikpuri</label><br>
+        <label><input type="radio" name="q5" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q5','Jaleel Manikpuri')">Check</button>
+    <p id="r5" class="result"></p>
+  </div>
+
+  <p id="finalResult"></p>
+
+  <script>
+    let correct = 0, wrong = 0, attempted = 0;
+
+    function checkAnswer(qId, rightAns) {
+      let options = document.getElementsByName(qId);
+      let selected = "";
+      for(let opt of options) {
+        if(opt.checked) {
+          selected = opt.value;
+          break;
+        }
+      }
+
+      let resId = "r" + qId.substring(1);
+
+      if(!selected) {
+        document.getElementById(resId).innerText = "Please select an option!";
+        return;
+      }
+
+      attempted++;
+
+      if(selected === rightAns) {
+        document.getElementById(resId).innerText = "Right ✅";
+        correct++;
+      } else {
+        document.getElementById(resId).innerText = "Wrong ❌ (Right Ans: " + rightAns + ")";
+        wrong++;
+      }
+
+      if(attempted === 5) {
+        document.getElementById("finalResult").innerText = 
+          "Aapka Result: " + correct + " Right ✅ aur " + wrong + " Wrong ❌ (Total 5 me se)";
+      }
+    }
+  </script>
+
+</body>
+</html>
