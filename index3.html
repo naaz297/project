@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayari Quiz Hinglish</title>
+ <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    
+
+    <div class="leaves">
+
+      <div class="set">
+
+        <div><img src="https://i.ibb.co/S0VnkZq/leaf-01.png" alt="leaf-01"></div>
+
+        <div><img src="https://i.ibb.co/fFrnHYd/leaf-02.png" alt="leaf-02"></div>
+
+        <div><img src="https://i.ibb.co/vdx8Jh5/leaf-03.png" alt="leaf-03"></div>
+
+        <div><img src="https://i.ibb.co/SdcBCvr/leaf-04.png" alt="leaf-04"></div>
+
+        <div><img src="https://i.ibb.co/S0VnkZq/leaf-01.png" alt="leaf-01"></div>
+
+        <div><img src="https://i.ibb.co/fFrnHYd/leaf-02.png" alt="leaf-02"></div>
+
+        <div><img src="https://i.ibb.co/vdx8Jh5/leaf-03.png" alt="leaf-03"></div>
+
+        <div><img src="https://i.ibb.co/SdcBCvr/leaf-04.png" alt="leaf-04"></div>
+
+      </div>
+
+    </div>
+
+
+
+    
+
+    <img class="bg" src="https://i.ibb.co/rfNqbQG/bg.jpg" alt="Background">
+
+    <img class="girl" src="https://i.ibb.co/W5ssvRf/girl.png" alt="Walking girl">
+
+    <img class="trees" src="https://i.ibb.co/QrMyLYc/trees.png" alt="Trees">
+
+
+
+    <div class="login" style="max-width: 700px; width: 100%;">
+
+
+  <h2>open shayari quiz✨</h2>
+  <hr>
+
+  <div class="question">
+    <p>Q1:Maut pe v mujhe yakeen hai⚰️...tum par v aitbar hai dekhna hai pehle kon aata hai?humein dono ka intezaar hai – Ye kis  ki shayari hai?</p>
+    <label><input type="radio" name="q1" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q1" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q1" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q1" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q1','Mirza Ghalib')">Check</button>
+    <p id="r1" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q2:Naa jana kaisa sajdon mai shor hai...<br>Tere baad Mehfilon Khamosh hai..<br>Hum dono hooobahoo ek jaise hai Main Kehta uska wo kehti mera dosh hai... – Ye kis  ki shayari hai?</p>
+    <label><input type="radio" name="q2" value="Munawar Faruqui"> Munawar Faruqui</label><br>
+    <label><input type="radio" name="q2" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q2" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+       <label><input type="radio" name="q2" value="Ahmed Faraz"> Ahmed Faraz </label><br>
+    <button onclick="checkAnswer('q2','Munawar Faruqui')">Check</button>
+    <p id="r2" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q3: Dil mei Khuda ka hona lazim hai Iqbal✒️<br> Sajdon mei pade rehne se Jannat nhi milti ✨ – Ye kis ki shayari hai?</p>
+      <label><input type="radio" name="q3" value="Munawar Faruqui"> Munawar Faruqui</label><br>
+    <label><input type="radio" name="q3" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q3" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+       <label><input type="radio" name="q3" value="Ahmed Faraz"> Ahmed Faraz </label><br>
+    <button onclick="checkAnswer('q3','Allama Iqbal')">Check</button>
+    <p id="r3" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q4: Mohabbat mili to neend v apni na rahi fara...Ghumnam Zindagi thi to kitna sukoon tha...🪴 – Ye kis ki shayari hai?</p>
+       <label><input type="radio" name="q4" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q4" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q4" value="Faiz ahmed Faiz"> Faiz ahmed Faiz</label><br>
+        <label><input type="radio" name="q4" value="Ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q4','Ahmed Faraz')">Check</button>
+    <p id="r4" class="result"></p>
+  </div>
+
+  <div class="question">
+    <p>Q5:Ye mujhe chain q nai padta ek hi shaks tha jahan me kiya...?🤔 – Ye kis ki shayari hai?</p>
+       <label><input type="radio" name="q5" value="Mirza Ghalib"> Mirza Ghalib</label><br>
+    <label><input type="radio" name="q5" value="Allama Iqbal"> Allama Iqbal</label><br>
+    <label><input type="radio" name="q5" value="Jaun Elia">Jaun Elia</label><br>
+        <label><input type="radio" name="q5" value="ahmed Faraz"> Ahmed Faraz</label><br>
+    <button onclick="checkAnswer('q5','Jaun Elia')">Check</button>
+    <p id="r5" class="result"></p>
+  </div>
+
+  <p id="finalResult"></p>
+
+  <script>
+    let correct = 0, wrong = 0, attempted = 0;
+
+    function checkAnswer(qId, rightAns) {
+      let options = document.getElementsByName(qId);
+      let selected = "";
+      for(let opt of options) {
+        if(opt.checked) {
+          selected = opt.value;
+          break;
+        }
+      }
+
+      let resId = "r" + qId.substring(1);
+
+      if(!selected) {
+        document.getElementById(resId).innerText = "Please select an option!";
+        return;
+      }
+
+      attempted++;
+
+      if(selected === rightAns) {
+        document.getElementById(resId).innerText = "Right ✅";
+        correct++;
+      } else {
+        document.getElementById(resId).innerText = "Wrong ❌ (Right Ans: " + rightAns + ")";
+        wrong++;
+      }
+
+      if(attempted === 5) {
+        document.getElementById("finalResult").innerText = 
+          "Aapka Result: " + correct + " Right ✅ aur " + wrong + " Wrong ❌ (Total 5 me se)";
+      }
+    }
+  </script>
+
+</body>
+</html>
