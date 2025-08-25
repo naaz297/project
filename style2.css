@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
   flex-direction: column;
   align-items: center; 
 }
-
 
 main {
   flex: 1;
@@ -47,7 +45,7 @@ main {
   white-space: nowrap;
 }
 
-/* ANIMATIONS */
+
 @keyframes slideFadeInLeft {
   0% { opacity: 0; transform: translateX(-50px); }
   100% { opacity: 1; transform: translateX(0); }
@@ -89,7 +87,7 @@ main {
        background-position: center;
         text-align: center;
        } 
-       #container1{
+#container1{
          height:300px; 
          width:200px;
           border:2px solid black;
@@ -99,8 +97,8 @@ main {
          background-repeat: no-repeat;
           background-size: cover; 
           background-position: center;
-         }
-          #container2{
+}
+#container2{
              height:300px;
               width:200px; 
               border:2px solid black; 
@@ -110,7 +108,7 @@ main {
                 background-position: center;
                  background-repeat: no-repeat; 
   background-size: cover;
- }
+}
 
 main {
   flex: 1;
@@ -136,4 +134,65 @@ footer p {
 
 footer strong {
   color: #131313;
+}
+
+
+
+@media (max-width: 1024px) {
+  .animated-heading, .content {
+    font-size: 2.2rem;
+    white-space: normal;  
+  }
+  
+  .box {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;  
+    border-radius: 30px;
+  }
+
+  #conatiner, #container1, #container2 {
+    width: 40%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-heading, .content {
+    font-size: 1.8rem;
+  }
+
+  .box {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  #conatiner, #container1, #container2 {
+    width: 80%;
+    height: 250px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-heading, .content {
+    font-size: 1.3rem;
+  }
+
+  #conatiner, #container1, #container2 {
+    width: 100%;
+    height: 220px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
